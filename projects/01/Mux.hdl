@@ -14,5 +14,36 @@ CHIP Mux {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    // A = a Or sel
+    Nand(a=a, b=a, out=nota);
+    Nand(a=sel, b=sel, out=notsel);
+    Nand(a=nota, b=notsel, out=aorsel);
+
+    // B = b And sel
+    Nand(a=b, b=sel, out=bnandsel);
+    Nand(a=bnandsel, b=bnandsel, out=bandsel);
+
+    // C = A(aorsel) Xor B(bandsel)
+    Nand(a=aorsel, b=aorsel, out=notca);
+    Nand(a=bandsel, b=bandsel, out=notcb);
+    Nand(a=notca, b=bandsel, out=caandb);
+    Nand(a=aorsel, b=notcb, out=aandcb);
+    Nand(a=caandb, b=caandb, out=corleft);
+    Nand(a=aandcb, b=aandcb, out=corright);
+    Nand(a=corleft, b=corleft, out=notcorleft);
+    Nand(a=corright, b=corright, out=notcorright);
+    Nand(a=notcorleft, b=notcorright, out=cxor);
+
+    // D = C(cxor) Xor notsel
+    Nand(a=cxor, b=cxor, out=notcxor);
+    Nand(a=cxor, b=sel, out=cxornandsel);
+    Nand(a=notcxor, b=notsel, out=notcxornandnotsel);
+    Nand(a=cxornandsel, b=cxornandsel, out=dandleft);
+    Nand(a=notcxornandnotsel, b=notcxornandnotsel, out=dandright);
+    Nand(a=dandleft, b=dandleft, out=dorleft);
+    Nand(a=dandright, b=dandright, out=dorright);
+    Nand(a=dorleft, b=dorright, out=dxor);
+
+    // E = not D
+    Nand(a=dxor, b=dxor, out=out);
 }
