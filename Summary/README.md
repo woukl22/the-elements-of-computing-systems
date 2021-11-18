@@ -1,0 +1,14 @@
+Summary
+----
+- Chapter 1: Boolean Logic
+- Chapter 2: Boolean Arithmetic
+- Chapter 3: Sequential logic
+- Chapter 4: Machine Language
+- Chapter 5: Computer Architecture
+- Chapter 6: Assembler
+- Chapter 7: Virtual Machine I - Stack
+- Chapter 8: Virtual Machine II - Program Control
+- Chapter 9: High-Level Language
+- Chapter 10: Compiler I - Syntax Analysis
+- Chapter 11: Compiler II - Code Generation
+- Chapter 12: Operating System
