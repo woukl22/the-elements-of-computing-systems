@@ -1,6 +1,6 @@
 Summary
 ----
-- Chapter 1: Boolean Logic
+- Chapter 1: [Boolean Logic](https://github.com/woukl22/the-elements-of-computing-systems/blob/main/Summary/Chapter%201:%20Boolean%20Logic.md)
 - Chapter 2: Boolean Arithmetic
 - Chapter 3: Sequential logic
 - Chapter 4: Machine Language
