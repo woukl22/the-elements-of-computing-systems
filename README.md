@@ -4,15 +4,6 @@ Learning computing system with 'The Elements of Computing Systems' book.<br>
 
 <br>
 
-
-## Introduction
-
-I can't do something needs internet like leetcode or app development since November 9, 2021.<br>
-Because internet in military disconnects frequently.<br>
-So I started to read 'The Elements of Computing Systems'.<br>
-I'll read this book and do project until the internet is fixed.<br>
-<br>
-
 ## Resource
 - Book: [The Elements of Computing Systems](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788966262427#N)
  
