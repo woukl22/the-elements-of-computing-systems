@@ -151,3 +151,18 @@ ex)
 <br>
 
 ### 산술 논리 연산 장치(Arithmetic Logical Unit, ALU)
+이 책에서는 핵 플랫폼의 ALU 칩을 설명한다. <br>
+- 칩의 두 16비트 입력: x, y 
+- 칩의 16비트 출력: out
+- ALU가 어떤 함수를 계산할지는, 제어비트(control bit)라는 6개의 입력 비트를 이용해서 결정한다.
+     - zx: zero the x input
+     - nx: negate the x input
+     - zy: zero the y input
+     - ny: negate the y input
+     - f: compute out = x+y(if 1) or x&y(if 0)
+     - no: negate the out output
+- 총 2^6 = 64개의 서로 다른 함수를 계산하는 것이 가능하다.
+![image](https://user-images.githubusercontent.com/69896250/147014006-210815ca-881c-4471-a526-704297443a66.png)
+
+
+![image](https://user-images.githubusercontent.com/69896250/147013980-9e20929a-72b4-42e0-ae23-372efee47781.png)
